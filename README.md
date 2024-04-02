@@ -9,3 +9,7 @@ These commands are used to quickly set up and start a new Express.js web applica
 5. `cd miniproject`: Changes the current directory to the newly created Express.js application directory.
 6. `npm install`: Installs dependencies for the Express.js application.
 7. `npm start`: Starts the Express.js application.
+
+# Supervisor
+
+1. `npm install --save supervisor`: Installs the supervisor for the project, the `--save` option adds it to the dependencies file but had to add manually for it to work.
