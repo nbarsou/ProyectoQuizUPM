@@ -26,3 +26,12 @@ These commands are used to quickly set up and start a new Express.js web applica
 - Add to `app.js` with the follwing lines:
   - `var favicon = require('serve-favicon');`
   - `app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));`
+
+# Add application layout
+
+- Install `npm install express-partials`
+- Add to `app.js` with the following lines:
+  - `var partials = require('express-partials');`
+  - `app.use(partials());`
+- Leave only the body in the .ejs, like index.ejs
+- Create `views/layout.ejs` with the layout for the rest of the html code.
