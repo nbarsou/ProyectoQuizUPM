@@ -13,3 +13,16 @@ These commands are used to quickly set up and start a new Express.js web applica
 # Supervisor
 
 1. `npm install --save supervisor`: Installs the supervisor for the project, the `--save` option adds it to the dependencies file but had to add manually for it to work.
+
+# Modify the home page
+
+- To change the javascrip, change "routes/[name].js"
+- To cahnge the html, change "views/[name].js"
+
+# Add a favicon
+
+- Make a favicon, added to public directory
+- Install `npm install serve-favicon`
+- Add to `app.js` with the follwing lines:
+  - `var favicon = require('serve-favicon');`
+  - `app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));`
